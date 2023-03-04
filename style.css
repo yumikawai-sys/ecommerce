@@ -1,0 +1,229 @@
+.container
+{
+    display:grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-auto-rows: minmax(50px, auto);
+    width: 100%;
+    height:auto; 
+    row-gap: 10px;   
+}
+
+header
+{
+    grid-column-start:1;
+    grid-column-end:11;
+    grid-row-start:1;
+    grid-row-end:2;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+header[h1] 
+{
+    font-size: 36px;
+}
+
+/* 1st Item Photo */
+.mainOne
+{
+    grid-column-start:3;
+    grid-column-end:6;
+    grid-row-start:3;
+    grid-row-end:6;
+    padding: 20px 0px 20px 0px;
+}
+
+/* 2nd Item Photo */
+.mainTwo
+{
+    grid-column-start:3;
+    grid-column-end:6;
+    grid-row-start:7;
+    grid-row-end:10;
+    padding: 20px 0px 20px 0px;
+}
+
+/* Texts to 1st Item Photo */
+.formtext
+{
+    grid-column-start:6;
+    grid-column-end:10;
+    grid-row-start:3;
+    grid-row-end:6;
+    margin-left:40px;
+}
+
+/* Texts to 2nd Item Photo */
+.popup
+{
+    grid-column-start:6;
+    grid-column-end:10;
+    grid-row-start:7;
+    grid-row-end:10;
+    margin-left:40px;
+}
+
+.popup h3 ~ h4
+{
+    color:rgb(233, 122, 18);
+    margin-left:20px;
+}
+
+/* Loyalty Program */
+.loyaltytext
+{
+    grid-column-start:1;
+    grid-column-end:11;
+    grid-row-start:10;
+    grid-row-end:11;
+    background: linear-gradient(to left, #F80, rgb(245, 232, 197));
+    
+}
+.loyaltytext h1
+{
+    color:rgb(145, 108, 6);
+    text-shadow: rgb(212, 225, 238) 4px 2px 0.5px;
+}
+
+.loyalform
+{
+    grid-column-start:7;
+    grid-column-end:11;
+    grid-row-start:10;
+    grid-row-end:11;
+    text-align: right;
+    padding:20px;
+    color:rgb(145, 108, 6);
+}
+#Email
+{
+    background-color: rgb(245, 232, 197);
+    transition: width 3s ease 5ms;
+    border: 0.5px solid black;
+    width: 100px;
+}
+#Email:hover {
+    width: 200px;
+}
+
+/* Customer also viewed */
+.similar
+{
+    grid-column-start:1;
+    grid-column-end:11;
+    grid-row-start:11;
+    grid-row-end:12;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.similar h2
+{
+    margin-left: 30px;
+}
+.similarItem
+{
+    float:left;
+    margin-left: 30px;
+    text-align: center;
+}
+
+/* Customer review */
+.Review
+{
+    grid-column-start:1;
+    grid-column-end:11;
+    grid-row-start:12;
+    grid-row-end:13;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.Review h2, .Review img
+{
+    margin-left: 30px;
+}
+
+footer
+{
+    grid-column-start:1;
+    grid-column-end:11;
+    grid-row-start:13;
+    grid-row-end:14;
+    background-color:black;
+    color: white;
+    
+}
+.footerItem
+{
+    float:left;
+    margin: 60px;
+    margin-left: 80px;
+}
+
+li{
+    list-style: none;
+    margin: 10px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit:cover;
+}
+
+#price
+{
+    color:red;
+    font-size: 24px;
+}
+span
+{
+    text-decoration: line-through;
+    color: black;
+    font-size: 12px;
+}
+
+fieldset
+{
+    border: none;
+}
+
+/* SNS icons */
+.fa-brands
+{
+    margin-left:40px;
+}
+
+/* Slides */
+.wrap 
+{
+    grid-column-start:1;
+    grid-column-end:11;
+    grid-row-start:2;
+    grid-row-end:3;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    height: 640px;
+    overflow: hidden;
+}
+
+.content 
+{
+    width: 640px;
+    height: 460px;
+}
+  
+.slideshow 
+{
+    display: flex;
+    animation: loop-slide 160s infinite linear 1s both;
+}
+  
+@keyframes loop-slide 
+{
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
